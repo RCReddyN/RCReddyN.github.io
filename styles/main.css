@@ -9,10 +9,6 @@ body{
     font-size: 44;
     padding: 0.25cm;
     color: #eace00;
-    /*background-color: #202020;*/
+    background-color: #202020;
     text-align: center;
-}
-
-.box{
-    display: inline-block;
 }
