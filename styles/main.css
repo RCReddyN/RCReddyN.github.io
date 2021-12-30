@@ -8,6 +8,10 @@ body{
     font-family: Roboto, Ubuntu, sans-serif;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 *{
     padding: 0;
     margin: 0;
@@ -23,6 +27,16 @@ header{
     max-width: 900px;
     padding: 0 15px;
     margin: 0 auto;
+    margin-bottom: 3rem;
+}
+
+section.skills .item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+    justify-self: center;
+    line-height: 2rem;
 }
 
 header nav .left a{
@@ -32,14 +46,48 @@ header nav .left a{
     transition: all 0.3s ease;
 }
 
-header nav .left a:hover{
+
+header .downloadcv{
+    display: flex;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+header .hero .downloadcv a{
+    padding: 0.8rem 1rem;
     font-size: 1rem;
+    font-weight: 300;
+    border: 2px solid var(--coal);
+    outline: none;
+    cursor: pointer;
+    background: transparent;
+    color: var(--coal);
+    transition: all 0.3s ease;
+    color: var(--coal);
+    text-decoration: none;
+    transition: all 0.3s;
+    margin-bottom: 3rem;
+}
+
+header .hero .downloadcv a:hover{
+    background: var(--coal);
+    color: var(--pure);
+}
+
+
+header nav .left a:hover{
+    font-size: 2rem;
     font-weight: 600;
     outline: none;
     cursor: pointer;
     text-transform: uppercase;
 }
 header nav{
+    align-items: center;
+    align-self: center;
+    justify-self: center;
     padding: 2rem 0;
 }
 
@@ -73,6 +121,11 @@ header nav{
     transition: all 0.3s;
 }
 
+.links a img{
+    max-width: 50px;
+    max-height: 50px;
+}
+
 .links a img:hover{
     width: 125%;
     height: 125%;
@@ -88,6 +141,16 @@ header nav{
     color: var(--pure);
     margin-bottom: 1rem;
     text-align: center;
+}
+
+section.projects{
+    margin-bottom: 3rem;
+}
+
+section.music .section-heading + p{
+    text-align:justify;
+    color: var(--coal);
+    line-height: 2rem;
 }
 
 section.music .music-wrapper{
@@ -109,7 +172,7 @@ section.projects .card-wrapper a:hover{
 
 section.projects .card-wrapper{
     display:grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     column-gap: 4rem;
     row-gap: 2rem;
     margin-bottom: 3rem;
@@ -132,45 +195,11 @@ section.projects .card-wrapper .card p{
 section.projects .card-wrapper .card:hover{
     color:var(--pure);
     text-transform: uppercase;
+    text-decoration: solid;
 }
 
-section.contact .input-wrap{
-    display: grid;
-    grid-template-columns: repeat(2 1fr);
-    column-gap: 2rem;
-    margin-bottom: 2rem;
-}
-
-section.contact .input-wrap input{
-    margin-bottom: 2rem;
-}
-
-section.contact .input-wrap-2{
-    display: flex;
-    flex-direction: column;
-}
-
-section.contact .input-wrap-2 input{
-    margin-bottom: 2rem;
-}
-
-section.contact .input-wrap-2 textarea{
-    padding: 1rem;
-    border: 1px solid;
-    font-size: 0.9rem;
-}
-
-section.contact input{
-    padding: 1rem;
-    border: 1px solid;
-    font-size: 0.9rem;
-}
-
-section.contact .input-wrap-2 textarea:focus, section.contact input:focus{
-    outline: none;
-}
-
-section.contact .btn-wrapper{
-    text-align: center;
-    margin-top: 2rem;
+section.projects .section-heading + p{
+    text-align:justify;
+    color: var(--coal);
+    line-height: 2rem;
 }
