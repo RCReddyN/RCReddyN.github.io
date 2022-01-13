@@ -29,6 +29,10 @@ header{
     margin: auto auto;
 }
 
+section.skills{
+    padding: 2rem 1rem;
+}
+
 section.skills .item{
     display: flex;
     flex-direction: column;
@@ -92,7 +96,7 @@ header nav{
 }
 
 .hero{
-    padding: 1rem 0;
+    padding: 2rem 1rem;
 }
 
 .hero .center h1{
@@ -131,12 +135,6 @@ header nav{
     height: 125%;
 }
 
-section{
-    margin-top: 3rem;
-    align-items: center;
-    margin-bottom: 3rem;
-}
-
 .section-heading{
     text-align: center;
     margin-bottom: 1rem;
@@ -149,6 +147,10 @@ section{
     text-align: center;
 }
 
+section.music{
+    padding: 2rem 1rem;
+}
+
 section.music .section-heading + p{
     text-align:justify;
     color: var(--coal);
@@ -158,6 +160,10 @@ section.music .section-heading + p{
 section.music .music-wrapper{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+}
+
+section.projects{
+    padding: 2rem 1rem;
 }
 
 section.projects .card-wrapper a{
