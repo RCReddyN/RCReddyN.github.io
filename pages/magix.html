@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width", initial-scale=1.0>
+        <meta http-equiv="="X-UA-Compatible" content="ie=edge">
+        <title>Magix</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../styles/magix.css">
+    </head>
+
+    <body>
+        <header>
+            <div class="container">
+                <div class="intro items-center justify-center">
+                    <div class="center">
+                        <h1>A date magixuare</h1>
+                        <br><br>
+                        <p>If you have no idea of what a magic square is, BROWSE. :P</p>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="magix">
+            <div class="container">
+                <div align="center">
+                    <label>
+                        Date
+                    </label>
+                    <input type="date" id="dateq">
+                    <input type="button" value="Build!" onclick="generate()">
+                    <table class=table>
+                        <tr class=row>
+                            <td class=data><label class=cell type="text" id="00"></td>
+                            <td class=data><label class=cell type="text" id="01"></td>
+                            <td class=data><label class=cell type="text" id="02"></td>
+                            <td class=data><label class=cell type="text" id="03"></td>
+                        </tr>
+                        <tr class=row>
+                            <td class=data><label class=cell type="text" id="10"></td>
+                            <td class=data><label class=cell type="text" id="11"></td>
+                            <td class=data><label class=cell type="text" id="12"></td>
+                            <td class=data><label class=cell type="text" id="13"></td>
+                        </tr>
+                        <tr class=row>
+                            <td class=data><label class=cell type="text" id="20"></td>
+                            <td class=data><label class=cell type="text" id="21"></td>
+                            <td class=data><label class=cell type="text" id="22"></td>
+                            <td class=data><label class=cell type="text" id="23"></td>
+                        </tr>
+                        <tr class=row>
+                            <td class=data><label class=cell type="text" id="30"></td>
+                            <td class=data><label class=cell type="text" id="31"></td>
+                            <td class=data><label class=cell type="text" id="32"></td>
+                            <td class=data><label class=cell type="text" id="33"></td>
+                        </tr>
+                        
+                    </table>
+                </div>
+            </div>
+        </section>
+        <script type="text/javascript" src="../scripts/magixuare.js"/>     
+    </body>
+</html>
