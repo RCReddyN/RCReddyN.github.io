@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width-device-width"  initial-scale="1.0">
+    <meta name="viewport" content="width-device-width" initial-scale="1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Magix</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,25 +13,27 @@
 </head>
 
 <body>
-    <header>
-        <div class="container">
-            <div class="intro">
-                <div class="center" align="center">
-                    <h1>A date magixuare</h1>
-                    <br><br>
-                    <p>Do you believe in magic?<br><br></p>
-                    <p>Let me dissapoint you right away.<br><br></p>
-                    <p>Magic squares have nothing to do with magic. If you ask me why would someone name them so, I do
-                        not have an answer. They are simply 4x4 grids containing numbers arranged in a way that the sum
-                        of them in any row, column or diagonal is the same.<br><br></p>
-                    <p>Once upon a time, many suns ago, I was very fond of these. So, I put this here in
-                        reminiscence.<br><br></p>
-                    <p> If you still want to be here, then scroll, pick a date and hit build. And, keep an eye on the
-                        first row.<br><br></p>
-                </div>
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v12.0"
+        nonce="7ijEFwPB"></script>
+    <div class="container">
+        <div class="intro">
+            <div class="center" align="center">
+                <h1>A date magixuare</h1>
+                <br><br>
+                <p>Do you believe in magic?<br><br></p>
+                <p>Let me dissapoint you right away.<br><br></p>
+                <p>Magic squares have nothing to do with magic. If you ask me why would someone name them so, I do
+                    not have an answer. They are simply 4x4 grids containing numbers arranged in a way that the sum
+                    of them in any row, column or diagonal is the same.<br><br></p>
+                <p>Once upon a time, many suns ago, I was very fond of these. So, I put this here in
+                    reminiscence.<br><br></p>
+                <p> If you still want to be here, then scroll, pick a date and hit build. And, keep an eye on the
+                    first row.</p>
             </div>
         </div>
-    </header>
+    </div>
+
     <section class="magix">
         <div class="container">
             <div align="center">
@@ -42,33 +44,41 @@
                 <input type="button" value="Build!" onclick="generate()">
                 <table class="table">
                     <tr class="row">
-                        <td class="data"><label class="main cell" id="00"/></td>
-                        <td class="data"><label class="main cell" id="01"/></td>
-                        <td class="data"><label class="main cell" id="02"/></td>
-                        <td class="data"><label class="main cell" id="03"/></td>
+                        <td class="data"><label class="main cell" id="00" /></td>
+                        <td class="data"><label class="main cell" id="01" /></td>
+                        <td class="data"><label class="main cell" id="02" /></td>
+                        <td class="data"><label class="main cell" id="03" /></td>
                     </tr>
                     <tr class="row">
-                        <td class="data"><label class="cell" id="10"/></td>
-                        <td class="data"><label class="cell" id="11"/></td>
-                        <td class="data"><label class="cell" id="12"/></td>
-                        <td class="data"><label class="cell" id="13"/></td>
+                        <td class="data"><label class="cell" id="10" /></td>
+                        <td class="data"><label class="cell" id="11" /></td>
+                        <td class="data"><label class="cell" id="12" /></td>
+                        <td class="data"><label class="cell" id="13" /></td>
                     </tr>
                     <tr class="row">
-                        <td class="data"><label class="cell" id="20"/></td>
-                        <td class="data"><label class="cell" id="21"/></td>
-                        <td class="data"><label class="cell" id="22"/></td>
-                        <td class="data"><label class="cell" id="23"/></td>
+                        <td class="data"><label class="cell" id="20" /></td>
+                        <td class="data"><label class="cell" id="21" /></td>
+                        <td class="data"><label class="cell" id="22" /></td>
+                        <td class="data"><label class="cell" id="23" /></td>
                     </tr>
                     <tr class="row">
-                        <td class="data"><label class="cell" id="30"/></td>
-                        <td class="data"><label class="cell" id="31"/></td>
-                        <td class="data"><label class="cell" id="32"/></td>
-                        <td class="data"><label class="cell" id="33"/></td>
+                        <td class="data"><label class="cell" id="30" /></td>
+                        <td class="data"><label class="cell" id="31" /></td>
+                        <td class="data"><label class="cell" id="32" /></td>
+                        <td class="data"><label class="cell" id="33" /></td>
                     </tr>
 
                 </table>
                 <br><br>
                 <p id="foot"></p>
+            </div>
+        </div>
+    </section>
+    <section class="comments">
+        <div class="container">
+            <div align="center">
+                <div class="fb-comments" data-href="https://rcreddyn.github.io/pages/magix.html" data-width="700"
+                    data-numposts="5"></div>
             </div>
         </div>
     </section>
@@ -127,7 +137,7 @@
                 }
             }
 
-            document.getElementById("foot").innerHTML = "Woah! Was that a special date?<br><br>I hope you can add the numbers, and check the summations yourself."
+            document.getElementById("foot").innerHTML = "Woah! Was that a special date?<br><br>I hope you can add the numbers, and check the summations yourself.<br><br><b>Note:</b> You might observe that the numbers in the magic square are note unique as opposed to that in a normal magic sqaure. This is intentional. Do you understand why? Write your thoughts in the comments!"
         }
     </script>
 </body>
